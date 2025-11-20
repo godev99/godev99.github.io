@@ -1,313 +1,538 @@
-Here’s the updated index.html you can paste straight into the file at https://github.com/godev99/godev99.github.io/blob/master/index.html.
-It fixes the HTML‑syntax errors, removes stray back‑slashes, closes all tags properly, and cleans up a few wording quirks while preserving the original layout and content.
 <!DOCTYPE html>
-<html lang="fr">
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Gabriel Ivanes – Cloud DevOps Engineer</title>
-    <style>
-        body {font-family: Arial, sans-serif; line-height: 1.6; margin:0; padding:0;}
-      nav ul {list-style:none; display:flex; gap:1rem; padding:1rem; background:#f5f5f5;}
-        nav li {cursor:pointer;}
-        .section {padding:2rem;}
-    h1, h2, h3, h5 {margin:0;}
-        p {margin:.5rem 0;}
-        ul {margin:.5rem 0 .5rem 2rem;}
-        a {color:#0066cc; text-decoration:none;}
-        a:hover {text-decoration:underline;}
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gabriel Ivanes</title>
+    <link rel="shortcut icon" href="me.ico" type="image/x-icon">
+    <link rel="icon" href="me.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
+
 <body>
-
-<!-- Navigation -->
-<nav>
-    <ul>
-        <li>About</li>
-        <li>Experience</li>
-        <li>Certifications</li>
-       <li>Education</li>
-        <li>Talks</li>
-        <li>Skills</li>
+<div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+</div>
+<!-- End #mobile-menu-toggle -->
+<header>
+    <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <ul id="menu" class="shadow">
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#experience">Experience</a>
+        </li>
+        <li>
+            <a href="#certifications">Certifications</a>
+        </li>
+        <li>
+            <a href="#education">Education</a>
+        </li>
+        <li>
+            <a href="#talks">Talks</a>
+        </li>
+        <li>
+            <a href="#skills">Skills</a>
+        </li>
     </ul>
-</nav>
-
-<!-- Header -->
-<header class="section">
-    <h1>Gabriel Ivanes</h1>
-    <h2>Cloud DevOps Engineer</h2>
-    <a href="resume.pdf" download>Download Resume</a>
 </header>
-
-<div id="lead-overlay"></div>
-
-<!-- About Me -->
-<section class="section">
-    <h3>About Me</h3>
-    <p>I grew up in the ’80s and ’90s with computers (286, Amiga, 486). Naturally I was fond of gaming and went into computing and programming. During my college years, I coded in TI‑Basic on my TI‑82 calculator.</p>
-
-    <p>Discovering computer possibilities by exploring operating systems sparked my curiosity: BeOS (now Haiku), Plan 9. With Linux I was attracted to minimal desktop experiences and window managers (wmii, wmi, dwm, xmonad) – I loved their KISS approach. Thanks to that community I learned Golang and Haskell.</p>
-
-    <p>Sport was also part of my childhood. The 1986 World Cup left a mark – a victory against Brazil and a defeat against Germany. I played football for ten years; the team game taught me that no player is more important than the team. I eventually settled on midfield and even captained the side. Tennis was my second favourite sport – unlike football, the game isn’t timed, and you can still win a match by gaining points after points. It taught me focus and confidence.</p>
-
-    <p>Professionally I started as a Desktop Engineer, focusing on OS and application integration with tools such as Sysprep, ImageX and Wise Package Studio. I then specialised in software packaging, preferring InstEd, which deepened my understanding of the Windows Installer model. Communicating with Niel Hunt, the creator of InstEd, was a unique experience.</p>
-
-    <p>Scripting in VBScript and PowerShell became a core part of my job. I moved further into automation with Windows Installer XML (WiX) and built static‑packaging architectures that could absorb dynamic sources. This led me to found my own company to spread this new way of thinking. While many clients off‑shored mass integrations to keep costs low, WiX allowed us to embed integration knowledge directly into developers’ stacks.</p>
-
-    <p>Realising that desktop engineering was no longer my playground, I naturally gravitated toward DevOps. Cloud computing reinvented how we consume resources and introduced new methods. I dug into Azure DevOps SDK, ARM templates and PowerShell to build novel services, while also enjoying coding in React JS, TypeScript and Python.</p>
-
-    <p>My latest mission involved delivering a three‑tier solution (Golang, React JS, PostgreSQL) to simplify technical assessments for cloud‑migration projects – a challenging yet rewarding experience.</p>
-
-    <p>On the personal side, my wife and I are proud parents of a boy and a little girl.</p>
-
-    <p>Today I’m looking for a role that balances DevOps technologies (Docker, Kubernetes, etc.) with opportunities to sharpen my programming skills, especially in Golang and Htmx.</p>
-
-   <p>May 28 2024 – my EF SET score is 71.</p>
-</section>
-
-<!-- Experience -->
-<section class="section">
-    <h3>Experience</h3>
-
-    <!-- SUEZ – Data & GenAI -->
-    <div data-date="May 2025 – December 2025">
-        <table>
-            <tr>
-            <td><img src="images/suez.png" alt="Suez" width="50px"></td>
-        <td style="padding-right:1rem;">
-          <h5 style="font-size:22px"><a href="https://www.suez.fr" target="_blank">SUEZ Digital Solutions</a></h5>
-                </td>
-            </tr>
-        </table>
-
-        <p style="font-size:24px; margin-top:-2rem;">Member of the Data &amp; GenAI team</p>
-
-        <p>Our goal is to provide cloud‑infrastructure services to data scientists and to rethink the machine‑learning platform.</p>
-
-        <p><strong>Accomplishments</strong></p>
-        <ul style="margin-left:1.5rem;">
-            <li><strong>Set up a cloud project</strong> using infrastructure‑as‑code, CI/CD pipelines, and created the accompanying technical and support documentation.</li>
-          <li><strong>Proposed and carried out a comprehensive assessment of the machine‑learning platform:</strong>
-                <ul>
-                    <li>Collected key performance indicators (KPIs) through scripts running in Azure and Azure DevOps.</li>
-                  <li>Built a Power BI report to showcase the various aspects of the assessment—costs, security, design, lifecycle, etc.</li>
-                </ul>
-            </li>
-            <li><strong>Participated in the team’s Agile organization within Azure DevOps:</strong>
-              <ul>
-                    <li>Created a backlog based on the needs identified in the assessment.</li>
-                <li>Defined the structure and work items.</li>
-                    <li>Established a roadmap according to the priority of those needs.</li>
-                </ul>
-            </li>
-            <li><strong>Developed a proof‑of‑concept (POC) around AKS</strong> as compute instances for Azure Machine Learning.</li>
-        </ul>
+<!-- End header -->
+<div id="lead">
+    <div id="lead-content">
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <h1>Gabriel Ivanes</h1>
+        <br/>
+        <br/>
+        <h2>Cloud DevOps Engineer</h2>
+        <br/>
+        <img class="circular--square" src="images/me.jpg"/>
+        <br/><br/><br/><br/><br/><br/><br/>
+        <a href="docs/cv.pdf" download="GIV.pdf" class="btn-rounded-plain">Download Resume</a>
     </div>
+    <!-- End #lead-content -->
 
-   <!-- SUEZ – Cloud Engineer (freelance) -->
-    <div data-date="September 2024 – March 2025">
-        <table>
-            <tr>
+    <div id="lead-overlfay"></div>
+</div>
+<!-- End #lead -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="heading">About Me</h2>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    I grew up in eighty's and ninety's with computers (286, Amiga, 486). Naturally I was fond of gaming and went into computing and programming.
+                    During my college years, I coded in TI Basic on my TI-82 calculator.
+                </p>
+                <p>
+                    Discovering computer possibilities, by exploring operating systems was my curiosity : <a href="https://en.wikipedia.org/wiki/BeOS" target="_blank">BeOS</a>   BeOS (now <a href="https://www.haiku-os.org" target="_blank">Haiku</a>), <a href="https://plan9.io/wiki/plan9/FAQ/index.html" target="_blank">Plan9</a>
+                    With Linux, I was appealed by minimal desktop experience and windows managers : <a href="https://suckless.org/philosophy/" target="_blank">wmii, wmi, dwm</a>, and xmonad. I loved their <a href="https://en.wikipedia.org/wiki/KISS_principle" target="_blank">KISS</a> approach.
+                    Thanks to this community, I learnt about Golang and Haskell.
+                </p>
+                <p>
+                    Sport was also part of my childhood. 1986 football world cup marked me, victory against Brazil and also defeat against Germany. I practice football during 10 years.
+                    This team game learnt me that no player is more important than the team. I played every role but finally preferred midfield with few experience as captain.
+                    Tennis was my second preferred sport. Unlike football, winning game is not timed. And you could still win a match if you gain points after points. I learnt staying focus and being confident about my personal abilities.
+                </p>
+                <p>
+                    In my career, I worked in compagnies as Desktop Engineer, especially into Operating System and Application Integration with tools like sysprep, imagex and Wise Package Studio.
+                    Then, my goal was to become an expert of software packaging. <a href="http://www.instedit.com/home.html" target="_blank">InstEd</a> was my preferred tooling choice.
+                    It leads me to better understand underlying windows installer model. Communication with Niel Hunt, developer of InstEd, while using his tool every day, was a unique experience.
+                </p>
+                <p>
+                    Scripting in VBScript and PowerShell was also a great part of my job. I went a step further into automation with <a href="https://wixtoolset.org/" target="_blank">Windows Installer XML</a>.
+                    Finally, I became able to automate software integration with static packaging architecture and dynamic sources absorption.
+                    That's why I decided to create my own company to spread this new way of thinking. Several clients were offshoring this activity of mass integrations to keep cost low.
+                    But with Wix, you could bring integration knowledge to developers and keeps its in internal as part of development stack.
+                    I realize desktop engineer was not my play field anymore and evolution toward DevOps became obvious.
+                </p>
+                <p>
+                    Next, Cloud computing reinvented our computing consumption and brought new possibilities but also new methods and behaviours.
+                    Always with the same spirit, I dug Azure DevOps SDK with ARM Templates and PowerShell to build new kinds of services.
+                    Coding with ReactJS, TypeScript and Python was also a great pleasure.
+                </p>
+                <p>
+                    My last mission was the opportunity to achieve a three tiers solution with Golang, React/JS and Postgresql to facilitate technical assessment of projects for cloud migration.
+                    A hard but great experience to me.
+                </p>
+                <p>
+                    In my personal life, with my wife we are proud parents of one boy and one little girl.
+                </p>
+                <p>
+                    Today I want to find a job with a right balance between DevOps technical stack to master, Docker, Kubernetes amongst others, and improving my programming skills, especially in Golang and Htmx.
+                </p>
+                <p> May the 28 2024, : <a href="https://cert.efset.org/3Aik3K" target="_blank">my EF SET score is 71</a>
+            </div>
+        </div>
+        <br/>
+    </div>
+</div>
+
+<!-- End #about -->
+
+<div id="experience" class="background-alt">
+    <h2 class="heading">Experience</h2>
+    <div id="experience-timeline">
+        <div data-date="September 2024 - Mars 2025">
+            <table>
+              <tr>
                 <td><img src="images/suez.png" alt="Suez" width="50px"></td>
-      <td style="padding-right:1rem;">
-            <h5 style="font-size:22px"><a href="https://www.suez.fr" target="_blank">SUEZ</a></h5>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.suez.fr" target="_blank">SUEZ</a></h5>
                 </td>
-            </tr>
-        </table>
-
-        <p style="font-size:24px; margin-top:-2rem;">Cloud Engineer (frelance)</p>
-
-       <p>Member of SecOps team with a mission to develop and report on the SUEZ GIS security perimeter. Prisma Cloud was a key solution, and my main activity was automated KPI gathering (API) and reporting via Power BI dashboards.</p>
-
-        <ul>
-            <li>Prisma Cloud reports with API, Azure DevOps pipelines and Power BI dashboards</li>
-      <li>Azure Policies management (FinOps, Governance, Security, Compliance, Tags)</li>
-        </ul>
-
-        <p><strong>Environment:</strong> Azure, Azure DevOps, Power BI.<br>
-        <strong>Technologies:</strong> Terraform, PowerShell.</p>
-
-        <p><strong>Projects:</strong></p>
-        <ul>
-          <li>Source‑code secrets and vulnerability management with Azure DevOps task extensions, Checkov and Gitleaks (POC)</li>
-         <li>Automated expiration notifications for Azure Key Vault objects (certificates, secrets) with Azure Logic Apps</li>
-        </ul>
-    </div>
-
-    <!-- AXA -->
-    <div data-date="February 2023 – June 2024">
-      <table>
-        <tr>
-       <td><img src="images/axa.png" alt="AXA" width="50px"></td>
-                <td style="padding-right:1rem;">
-                    <h5 style="font-size:22px"><a href="https://www.axa.fr" target="_blank">AXA Group Operations</a></h5>
-         </td>
-            </tr>
-        </table>
-
-        <p style="font-size:24px; margin-top:-2rem;">Cloud DevOps Engineer (freelance)</p>
-
-        <p>Joined AXA Transversal Cloud Brokers team. Our goal was to support Cloud Brokers worldwide and provide streamlined cloud‑migration solutions for AXA entities.</p>
-
-      <ul>
-            <li>Three‑tier solution to facilitate cloud‑migration assessments and Terraform code generation (React JS, Golang, PostgreSQL).</li>
-      <li>ITSM automation for Azure identity management (Python API).</li>
-            <li>Cloud‑brokers support for Azure.</li>
-        </ul>
-
-        <p><strong>Environment:</strong> Azure, Azure DevOps, GitHub Enterprise, Terraform Enterprise.<br>
-        <strong>Technologies:</strong> React JS, Python, Golang, PostgreSQL, Terraform.</p>
-    </div>
-
-    <!-- SODEXO -->
-    <div data-date="February 2019 – November 2022">
-        <table>
-            <tr>
-                <td><img src="images/sodexo.png" alt="Sodexo" width="50px"></td>
-                <td style="padding-right:1rem;">
-                    <h5 style="font-size:22px"><a href="https://www.sodexo.fr" target="_blank">Sodexo</a></h5>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">Cloud Engineer (freelance)</p>
+            <p> Member of SecOps team with a mission to develop and report about Suez GIS security perimeter. Prisma Cloud is a key solution within the SecOps team and my main ativity was automated kpis gathering (API) and report PowerBI dashboards.
+                <br> <br/> • Prisma Cloud reports with API, Azure DevOps pipelines and PowerBI dashboards
+                <br> • Azure Policies management (FinOps, Governance, Security, Compliance, Tags)
+                <br/> <br/>  Environment: Azure, Azure DevOps, Power BI.
+                <br/> Technologies: Terraform, Powershell.
+            <p> Projects:
+                <br> • Source code secrets and vulnerabilities management with Azure DevOps task extensions, checkov and gitleaks (POC)
+                <br> • Automated expiration notifications for Azure Keyvault objects (certificats, secrets) with Azure Logic Apps.
+            </p>
+        </div>
+        <div data-date="February 2023 - June 2024">
+            <table>
+              <tr>
+                <td><img src="images/axa.png" alt="Axa" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.axa.fr" target="_blank">AXA Group Operations</a></h5>
                 </td>
-            </tr>
-        </table>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">Cloud DevOps Engineer (freelance)</p>
+            <p> Joining Axa Transversal Cloud Brokers team. Our goal was to support Cloud Brokers activity worldwide and to provide solutions to the easiest cloud migrations of Axa entities.
+                <br/> <br/> • 3 tiers solution to facilitate cloud migrations assessments and terraform code generation (ReactJS, Golang, Postgresql).
+                <br> • ITSM Automation for Azure identity management (Python API).
+                <br> • Cloud brokers support for Azure.
 
-        <p style="font-size:24px; margin-top:-2rem;">Lead DevOps (external)</p>
-
-        <p>Joined Sodexo Cloud Competences Center (MoveToCloud initiative) to accelerate Azure adoption. Delivered infrastructure automation and built reusable “Products” that encoded Sodexo’s golden‑rules.</p>
-
-        <p><strong>Key achievements:</strong></p>
-        <ul>
-            <li>Originated the “Products” concept.</li>
-            <li>Implemented multi‑repository/project code branching.</li>
-            <li>Managed Sodexo Azure DevOps private marketplaces.</li>
-            <li>Developed custom Azure DevOps service connections.</li>
-            <li>Designed Azure DevOps licence‑management service.</li>
-            <li>Created reporting scripts (licence usage, automation schedules, product dashboard).</li>
-            <li>Authored extensive product documentation and best‑practice guides.</li>
-            <li>Provided global Azure DevOps support.</li>
-            <li>Contributed to cloud‑native initiatives (certification renewals, SharePoint/Dynamics rights replication).</li>
-        </ul>
-
-        <p><strong>Environment:</strong> Azure, Azure DevOps, GitHub Enterprise, Terraform Enterprise.<br>
-        <strong>Technologies:</strong> React JS, Python, Golang, PostgreSQL, Terraform.</p>
-    </div>
-
-    <!-- KPMG -->
-    <div data-date="February 2018 – January 2019">
-        <table>
-            <tr>
-                <td><img src="images/kpmg.png" alt="KPMG" width="50px"></td>
-                <td style="padding-right:1rem;">
-                    <h5 style="font-size:22px"><a href="https://home.kpmg" target="_blank">KPMG</a></h5>
+                <br/> <br/>  Environment: Azure, Azure DevOps, GitHub Enterprise, Terraform Enterprise
+                <br/> Technologies: ReactJS, Python, Golang, Postgresql, Terraform
+            </p>
+        </div>
+        <div data-date="February 2019 - November 2022">
+            <table>
+              <tr>
+                <td><img src="images/sodexo.png" alt="Axa" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.sodexo.fr" target="_blank">SODEXO</a></h5>
                 </td>
-            </tr>
-        </table>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">Lead DevOps (external)</p>
+            <p> Joining Sodexo Cloud Competences Center with MoveToCloud initiative to facilitate Microsoft Azure adoption.We support migration and cloud native projects by delivering infrastructure automation. Within Product Team, we implemented Products, as automation packages, which embedded Sodexo Global Eco System golden rules
+                <br/> <br/> As Product Technical Lead, I coded a new kind of automation. With Azure DevOps SDK, we developed several set of custom task with embedded services. Here are my main achievements :
+                <br/><br/> • Origin of Products
+                <br/> • Code branching in multi repositories/projects.
+                <br/> • Management of Sodexo Azure DevOps private marketplaces.
+                <br/> • Development of Azure DevOps custom service connections
+                <br/> • Design and development of Azure DevOps licence management service.
+                <br/> • Scripting for reports: Azure DevOps licences, Automation schedules, Product Dashboard.
+                <br/> • Documentation of Products and development best practices.
+                <br/> • Global Support for Azure DevOps
+                <br/> • Participation of various cloud native solutions: certifications renewal, Sharepoint online/Dynamics rights replications..
 
-        <p style="font-size:24px; margin-top:-2rem;">Cloud DevOps Engineer (external)</p>
-
-        <p>Worked on the “Constellation” SaaS project – a cloud‑based platform exposing internal metrics and automating accountant workflows. Hosted in Azure, the solution was built with PowerShell and ARM templates.</p>
-
-        <ul>
-            <li>Provisioned full environments via ARM templates.</li>
-            <li>Automated pipelines with Azure DevOps.</li>
-           <li>Managed configuration through Azure DevOps Library.</li>
-            <li>Integrated PowerShell scripts with Azure DevOps API (experimental).</li>
-           <li>Provided documentation (Wiki) and acted as Azure DevOps technical lead.</li>
-            <li>Implemented GitFlow branching strategy.</li>
-            <li>Supported SQL queries and Azure Data Factory automation.</li>
-        </ul>
-
-        <p><strong>Environments:</strong> Azure, Azure DevOps.<br>
-        <strong>Technologies:</strong> PowerShell, ARM templates.</p>
+                        <br/> <br/>  Environment: Azure, Azure DevOps, GitHub Enterprise, Terraform Enterprise
+                        <br/> Technologies: ReactJS, Python, Golang, Postgresql, Terraform
+                    </p>
+                </div>
+        <div data-date="February 2018 – January 2019">
+            <table>
+              <tr>
+                <td><img src="images/kpmg.png" alt="Kpmg" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://home.kpmg" target="_blank">KPMG</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">Cloud DevOps Engineer (external)</p>
+            <p> Constellation project is a cloud initiative to revolution KPGM activity by exposing internal metrics and process automation for accountants. As a SAAS solution, Constellation was hosted in Azure Cloud, while infrastructure and application layer programming were realised in with PowerShell and ARM templates. As Cloud DevOps Engineer I was accountable for Azure integration.
+                <br/><br/> • Provisioning of full environments with ARM templates.
+                <br/> • Automation with Azure DevOps Pipelines
+                <br/> • Configuration Management with Azure DevOps Library
+                <br/> • Environment Provisioning with powershell and Azure DevOps API. (experimentation)
+                <br/> • Support and documentation (wiki)
+                <br/> • Azure DevOps technical lead.
+                <br/> • Code branching implementation for Developers (GitFlow)
+                <br/> • Participate to SQL queries and DataFactory integration Automation
+                <br/> <br/> Environments: Azure, Azure DevOps Technologies, Powershell,Templates ARM
+                <br/> Technologies: Powershell,Templates ARM
+            </p>
+        </div>
+        <div data-date="May 2017 – January 2018">
+            <table>
+              <tr>
+                <td><img src="images/rothschild.png" alt="ROTHSCHILD" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.rothschildandco.com" target="_blank">ROTHSCHILD</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">DevOps Engineer (external)</p>
+            <p>Member of devops engineer and database team.
+                <br/><br/> • CI/CD Implementations for internals projects.
+                <br/> • Management of global project orchestrator
+                <br/> • Documentation and Support
+                <br/> <br/> Environments: Windows Server 2012, SQL Server 2012
+                <br/> Technologies: VSTS/TFS, VisualCron, PDQ Deploy & Inventory, Powershell
+            </p>
+        </div>
+        <div data-date="November 2015 – January 2017">
+            <table>
+              <tr>
+                <td><img src="images/engie.png" alt="ENGIE" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.engie.com" target="_blank">ENGIE</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">DevOps Engineer (external)</p>
+            <p> Member of desktop engineer team between Paris and Brussels.
+                <br/><br/> • Packaging with Windows Installer XML as primary packaging tool
+                <br> • Automation of Application integration in MSI format
+                <br/> • Application Delivery with PDQ Deploy and SCCM
+                <br/> • CI/CD implementation for one project.
+                <br/> • Documentation and Support
+                <br/> <br/> Environments: Windows Server 2012, Windows 7.
+                <br/> Technologies: Windows Installer XML, Visual Studio, InstEd, PDQ Deploy & Inventory, SCCM2012, Powershell
+            </p>
+        </div>
+        <div data-date="November 2014 – October 2015">
+            <table>
+              <tr>
+                <td><img src="images/thales.png" alt="THALES" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.thalesgroup.com" target="_blank">THALES</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">DevOps Engineer (external)</p>
+            <p> Project of desktop applications migrations to Windows 7. Member of desktop engineer team.
+                <br/><br/> • Check of application functional specifications.
+                <br> • Check of application technical specifications.
+                <br/> • Rework of application integration in MSI format.
+                <br/> • Documentation and Support
+                <br/> <br/> Environments: Windows Server 2012, Windows 7.
+                <br/> Technologies: InstEd, Installshield, VBScripts, Powershell, ITCM
+            </p>
+        </div>
+        <div data-date="April 2014 – December 2014">
+                <h5 style="font-size: 22px"><a target="_blank">NEWBX<br></a></h5>
+                <p style="font-size: 24px; margin-top: -2rem;">CEO</p>
+            <p> Proposal of inventive application integration. NEWBX support client in automation application integration with <a href="https://wixtoolset.org/" target="_blank">WiX</a> :
+                <br><br/> • Open-source
+                <br> • Interoperable : Builtin integration with developers activity (Visual Studio)
+                <br> • Price : free
+                <br> • Support : <a href="https://www.firegiant.com" target="_blank">FireGiant</a> support from WiX creators, with Rob Mensching co-founder and MVP.
+                <br><br> <b><a href="https://en.wikipedia.org/wiki/WiX" target="_blank">WiX</a> was the first Microsoft project to be released under an open-source license, the Common Public License.</b>
+            </p>
+        </div>
+        <div data-date="August 2012 – Mars 2014">
+            <table>
+              <tr>
+                <td><img src="images/bouygues.png" alt="BOUYGUES CONSTRUCTION" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.bouygues-construction.com" target="_blank">BOUYGUES CONSTRUCTION</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">DevOps Engineer (external)</p>
+            <p> Member of desktop engineer team.
+                <br/><br/> • Automation of Application integration in MSI format
+                <br/> • Application integration validation script in <a href="https://devblogs.microsoft.com/setup/run-ice-validation-and-fix-errors/" target="_blank">ICE</a> format with client constraints.
+                <br> • Application Deployment with SCCM
+                <br> • Managing of integration requests workflow
+                <br> • Audit and best practices share for packaging activity.
+                <br/> <br/> Environments: Windows Server 2008/2012, Windows 7/8
+                <br/> Technologies: Windows Installer XML, InstEd, App-V 5, Powershell, VBScripts, SCCM2012
+           </p>
+        </div>
+        <div data-date="June 2011 – July 2012">
+            <table>
+              <tr>
+                <td><img src="images/renault.png" alt="RENAULT" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.renaultgroup.com" target="_blank">RENAULT</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">DevOps Engineer (external)</p>
+            <p> Project of Application migration from Windows XP to Windows 7.
+                <br/><br/> • Application integration in MSI format
+                <br/> • Developers technical support for Windows 7.
+                <br/> • Application integration validation script in <a href="https://devblogs.microsoft.com/setup/run-ice-validation-and-fix-errors/" target="_blank">ICE</a> format with client constraints.
+                <br> • Inventory of all shared libraries in MSI format with custom model.
+                <br> • Validation of MSI with shared libraries.
+                <br/> <br/> Environments: Windows Server 2003, Windows XP/7
+                <br/> Technologies: InstEd, Wise Package Studio, VBScript, SQL, PowerShell.
+            </p>
+        </div>
+        <div data-date="August 2010 – May 2011">
+            <table>
+              <tr>
+                <td><img src="images/francetv.png" alt="FRANCE TELEVISION" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.francetelevisions.fr" target="_blank">FRANCE TELEVISION</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">DevOps Engineer (external)</p>
+            <p> Member of desktop engineer team.
+                <br/><br/> • Application integration in MSI format
+                <br/> • Operating system integration with imagex and sysprep.
+                <br/> • Citrix application integration and publication.
+                <br/> • Support and documentation.
+                <br/> <br/> Environments: Novell ZenWorks, Windows Server 2003, Windows XP/7.
+                <br/> Technologies: InstEd, Wise Package Studio, VBScript, PowerShell, WinPE, Citrix.
+            </p>
+        </div>
+        <div data-date="August 2008 – July 2010">
+            <table>
+              <tr>
+                <td><img src="images/france3.png" alt="FRANCE3" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.francetelevisions.fr" target="_blank">FRANCE3</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">DevOps Engineer (external)</p>
+            <p> Member of desktop engineer team.
+                <br/><br/> • Application integration in MSI format
+                <br/> • Operating system integration with imagex and sysprep.
+                <br/> • Citrix application integration and publication.
+                <br/> • Support and documentation.
+                <br/> • Packaging innovation with active setup and upgrade code integrations.
+                <br/> <br/> Environments: Windows Server 2003, Windows XP/7.
+                <br/> Technologies: InstEd, Wise Package Studio, VBScript, PowerShell, WinPE, Citrix.
+            </p>
+        </div>
+        <div data-date="February 2008 – July 2008">
+            <table>
+              <tr>
+                <td><img src="images/aramice.png" alt="ARAMICE" width="50px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://aramis.group/fr/" target="_blank">ARAMICE</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">DevOps Engineer (external)</p>
+            <p> Member of desktop engineer team.
+                <br/><br/> • Application integration in MSI format
+                <br/> • Operating system integration visualisation representation with FreeMind
+                <br/> • Scripting with Kix
+                <br/> <br/> Environments: Windows Server 2003, Windows XP.
+                <br/> Technologies: Wise Package Studio, VBScript.
+            </p>
+        </div>
+        <div data-date="2007">
+            <table>
+              <tr>
+                <td><img src="images/cegedim.png" alt="CEGEDIM DENDRITE" width="60px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.cegedim.fr" target="_blank">CEGEDIM DENDRITE</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">HelpDesk (internal)</p>
+            <p> Member of helpdesk team.
+                <br/><br/> • Application and hardware support for pharmaceutique laboratories (UCB, GENEVRIER) and retail (METRO), and other clients (EVIAN, SIGMAKALON, BACARDI, REVLON).
+                <br/> • Operating system integration visualisation representation with FreeMind
+                <br/> • Scripting with Kix
+                <br/> <br/> Environments: Windows Server NT, 2000, XP
+                <br/> Technologies: Office, ActiveSync, Symantec Antivirus, GHOST 2003, Business Everywhere, RTC, ADSL (Ethernet et wifi), 3G, Cisco VPN, Checkpoint VPN, Secureclient, PCAnywhere, VNC, Netviewer.
+            </p>
+        </div>
+        <div data-date="2006">
+            <table>
+              <tr>
+                <td><img src="images/dekra.png" alt="DEKRA NORISKO" width="60px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.dekra-norisko.fr/" target="_blank">DEKRA NORISKO</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">HelpDesk (external)</p>
+            <p> Member of helpdesk team.
+                <br/><br/> • Application and hardware support for automobile technical inspection centers.
+                <br/> • Operating system integration visualisation representation with FreeMind
+                <br/> • Scripting with Kix
+                <br/> <br/> Environments: Windows XP
+                <br/> Technologies: WinPark, Adsl, wifi, pocketpc.
+            </p>
+        </div>
+        <div data-date="2005">
+            <table>
+              <tr>
+                <td><img src="images/teleperformance.png" alt="TELEPERFORMANCE" width="60px"></td>
+                <td style="padding-right: 1rem;">
+                  <h5 style="font-size: 22px"><a href="https://www.tp.com/" target="_blank">TELEPERFORMANCE</a></h5>
+                </td>
+              </tr>
+            </table>
+            <p style="font-size: 24px; margin-top: -2rem;">HelpDesk (external)</p>
+            <p> Member of helpdesk team to support CEGETEL subscribers with their internet connection.
+                <br/> <br/> Environments: Windows XP
+            </p>
+        </div>
     </div>
+</div>
+<!-- End #experience -->
 
-    <!-- ROYTSCHILD -->
-    <div data-date="May 2017 – January 2018">
-        <table>
-          <tr>
-       <td><img src="images/rothschild.png" alt="Rothschild" width="50px"></td>
-        <td style="padding-right:1rem;">
-                <h5 style="font-size:22px"><a href="https://www.rothschildandco.com" target="_blank">Rothschild</a></h5>
-         </td>
-        </tr>
-        </table>
+<div id="certifications" class="optional-section background-alt">
+<h2 class="heading">Certifications</h2>
 
-        <p style="font-size:24px; margin-top:-2rem;">DevOps Engineer (external)</p>
+<div class="optional-section-block">
+    <h3>AZ-203: Developing Solutions for Microsoft Azure (2019)</h3>
+    <br/><br/>
+    <h3>AZ-300: Microsoft Azure Architect Technologies (2019)</h3>
+    <br/><br/>
+    <h3>AZ-400: Microsoft Azure DevOps Solutions (2019)</h3>
+</div>
 
-        <p>Member of the DevOps and Database team.</p>
+<!-- End .optional-section-block -->
 
-        <ul>
-            <li>CI/CD implementations for internal projects.</li>
-            <li>Management of a global orchestration platform.</li>
-            <li>Documentation and support.</li>
-        </ul>
+</div>
+<!-- End .optional-section -->
 
-        <p><strong>Environments:</strong> Windows Server 2012, SQL Server 2012.<br>
-        <strong>Technologies:</strong> VSTS/TFS, VisualCron, PDQ Deploy & Inventory, PowerShell.</p>
+<div id="education">
+    <h2 class="heading">Education</h2>
+    <div class="education-block">
+        <h3>ESIG EST</h3>
+        <span class="education-date">Sept 1999 - Sept 2001</span>
+        <h4>BTS Informatique de Gestion (alternance)</h4>
+        <br/>
+        <h3>Lycée Jean Perrin Lyon 9e</h3>
+        <span class="education-date">Sept 1998 - Sept 1999</span>
+        <h4>Baccalauréat Sciences Économiques et Sociales</h4>
     </div>
+</div>
 
-    <!-- ENGIE -->
-    <div data-date="November 2015 – January 2017">
-        <table>
-        <tr>
-           <td><img src="images/engie.png" alt="Engie" width="50px"></td>
-        <td style="padding-right:1rem;">
-                  <h5 style="font-size:22px"><a href="https://www.engie.com" target="_blank">Engie</a></h5>
-         </td>
-        </tr>
-        </table>
-
-        <p style="font-size:24px; margin-top:-2rem;">DevOps Engineer (external)</p>
-
-        <p>Member of the Desktop Engineering team (Paris & Brussels).</p>
-
-        <ul>
-            <li>Packaging with Windows Installer XML (primary tool).</li>
-            <li>Automation of application integration in MSI format.</li>
-            <li>Application delivery via PDQ Deploy and SCCM.</li>
-            <li>CI/CD implementation for one project.</li>
-            <li>Documentation and support.</li>
-        </ul>
-
-        <p><strong>Environments:</strong> Windows Server 2012, Windows 7.<br>
-        <strong>Technologies:</strong> WiX, Visual Studio, InstEd, PDQ Deploy & Inventory, SCCM 2012, PowerShell.</p>
+<div id="talks" class="background-alt">
+    <h2 class="heading">Talks</h2>
+    <div class="container">
+    <div class="row">
+    <p> DevOps, la chute du mur (2021)</p>
+    <br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/AhT3jG_0SWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br/>
     </div>
-
-    <!-- THALES -->
-    <div data-date="November 2014 – October 2015">
-      <table>
-            <tr>
-                <td><img src="images/thales.png" alt="Thales" width="50px"></td>
-        <td style="padding-right:1rem;">
-                  <h5 style="font-size:22px"><a href="https://www.thalesgroup.com" target="_blank">Thales</a></h5>
-           </td>
-          </tr>
-        </table>
-
-        <p style="font-size:24px; margin-top:-2rem;">DevOps Engineer (external)</p>
-
-        <p>Project: migration of desktop applications to Windows 7. Member of the Desktop Engineering team.</p>
-
-        <ul>
-            <li>Verification of functional and technical specifications.</li>
-        <li>Re‑work of application integration in MSI format.</li>
-         <li>Documentation and support.</li>
-     </ul>
-
-        <p><strong>Environments:</strong> Windows Server 2012, Windows 7.<br>
-        <strong>Technologies:</strong> InstEd, InstallShield, VBScript, PowerShell, ITCM.</p>
     </div>
+</div>
 
-    <!-- NEWBX -->
-    <div data-date="April 2014 – December 2014">
-        <h5 style="font-size:22px"><a href="#" target="_blank">NEWBX</a></h5>
-        <p style="font-size:24px; margin-top:-2rem;">CEO</p>
+<div id="skills">
+    <h2 class="heading">Soft Skills</h2>
+    <ul>
+        <li>Critical Thinking</li>
+        <li>Team Spirit</li>
+        <li>Source of proposals</li>
+        <li>Leadership</li>
+    </ul>
+    <br/>
+    <br/>
+    <h2 class="heading">Technical Skills</h2>
+    <ul>
+        <li>Azure</li>
+        <li>Azure DevOps</li>
+        <li>Go</li>
+        <li>Htmx</li>
+        <li>PowerShell</li>
+        <li>Terraform</li>
+        <li>ReactJS</li>
+        <li>Python</li>
+    </ul>
+</div>
 
-        <p>Proposed innovative application‑integration services. NEWBX supports clients in automating integration with <a href="https://wixtoolset.org/" target="_blank">WiX</a>:</p>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 copyright">
+                <p>
+                    Copyright &copy; 2024 Gabriel Ivanes
+                </p>
+            </div>
+            <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+            </div>
+            <div class="col-sm-5 social">
+                <ul>
+                    <li>
+                        <a href="https://stackoverflow.com/users/1038064/gab" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/godev99" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linked.com/in/givanes/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:contact@0c0.fr?subject=Contact" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="tel:+33628329266" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer -->
 
-        <ul>
-            <li>Open‑source.</li>
-            <li>Interoperable – built‑in integration with developers’ workflow (Visual Studio).</li>
-            <li>Free pricing.</li>
-            <li>Support from <a href="https://www.firegiant.com" target="_blank">FireGiant</a>, the WiX creators, including co‑founder Rob Mensching (MVP).</li>
-        </ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/scripts.min.js"></script>
+</body>
 
-        <p><strong><a href="https://en.wikipedia.org/wiki/WiX"
+</html>
